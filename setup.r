@@ -1,9 +1,4 @@
 # R语言安装包
-
-
-
-
-
 install.packages("BiocManager")
 install.packages("colorspace")
 install.packages("stringi")
@@ -33,6 +28,7 @@ BiocManager::install("mirna40cdf"       ,update=TRUE, ask=FALSE)
 BiocManager::install("affy"             ,update=TRUE, ask=FALSE)
 BiocManager::install("tcltk"            ,update=TRUE, ask=FALSE)
 BiocManager::install("ChIPseeker"       ,update=TRUE, ask=FALSE)
+
 
 
 
