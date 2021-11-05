@@ -1,4 +1,3 @@
-# R语言安装包
 install.packages("BiocManager")
 install.packages("colorspace")
 install.packages("stringi")
