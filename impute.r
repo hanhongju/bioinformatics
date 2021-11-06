@@ -12,3 +12,6 @@ normalizedData=rbind(geneNames=colnames(normalizedData),normalizedData)
 write.table(normalizedData,file="normalize.txt",sep="\t",quote=F,col.names=F)
 
 
+
+
+
