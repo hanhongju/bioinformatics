@@ -1,7 +1,8 @@
 #impute and normalize data
 library(impute)
 library(limma)
-setwd("D:\\GSE9508\\cptac\\04.normalize") 
+setwd("D:\\GSE9508\\cptac\\04.normalize")
+file="GSE9508_matrixv3.csv"
 readtable=read.csv(file,header=T,check.names=F,row.names=1)
 readtable=as.matrix(readtable)
 imputedmatrix=impute.knn(readtable)
