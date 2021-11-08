@@ -2,15 +2,20 @@
 library(impute)
 library(limma)
 setwd("D:\\GSE9508\\cptac\\04.normalize")
+
 file="GSE9508_matrixv3.csv"
-readtable=read.csv(file,header=T,check.names=F,row.names=1)
-readtable=as.matrix(readtable)
-imputedmatrix=impute.knn(readtable)
-readtable=imputedmatrix$data
+rt2=read.csv(file,header=T,row.names=1)
+rt2=as.matrix(rt2)
+
+#impute the matrix
+mat=impute.knn(rt2)
+rt=mat$data
+
 #normalize
-normalizedData=normalizeBetweenArrays(as.matrix(readtable))
-normalizedData=rbind(geneNames=colnames(normalizedData),normalizedData)
-write.table(normalizedData,file="normalize.txt",sep="\t",quote=F,col.names=F)
+normalizeData=normalizeBetweenArrays(as.matrix(rt))
+
+#write outcomes
+write.csv(normalizeData,file="normalize.csv")
 
 
 
