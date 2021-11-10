@@ -1,3 +1,4 @@
+#insatll necessary packages
 install.packages("BiocManager")
 install.packages("colorspace")
 install.packages("stringi")
