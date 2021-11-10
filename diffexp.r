@@ -6,10 +6,12 @@ logFCfilter=0
 conNum=13
 treatNum=12
 
+
 outTab=data.frame()
 group=c(rep(2,treatNum),rep(1,conNum))
 data=read.csv(inputFile,header=T,row.names=1)
 data=as.matrix(data)
+
 
 for(i in row.names(data)){
   geneName=i
@@ -28,13 +30,10 @@ for(i in row.names(data)){
 	 }
 }
 
+
 write.csv(outTab,file="all.csv",row.names=F)
-
-
 outDiff=outTab[( abs(as.numeric(as.vector(outTab$logFC)))>logFCfilter & as.numeric(as.vector(outTab$pValue))<pFilter),]
 write.csv(outDiff,file="diff.csv",row.names=F)
-
-
 heatmap=rbind(ID=colnames(data[as.vector(outDiff[,1]),]),data[as.vector(outDiff[,1]),])
 heatmap=rbind(data[as.vector(outDiff[,1]),])
 write.csv(heatmap,file="diffProteinExp.csv")
