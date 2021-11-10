@@ -34,7 +34,6 @@ for(i in row.names(data)){
 write.csv(outTab,file="all.csv",row.names=F)
 outDiff=outTab[( abs(as.numeric(as.vector(outTab$logFC)))>logFCfilter & as.numeric(as.vector(outTab$pValue))<pFilter),]
 write.csv(outDiff,file="diff.csv",row.names=F)
-heatmap=rbind(ID=colnames(data[as.vector(outDiff[,1]),]),data[as.vector(outDiff[,1]),])
 heatmap=rbind(data[as.vector(outDiff[,1]),])
 write.csv(heatmap,file="diffProteinExp.csv")
 
