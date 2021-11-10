@@ -2,13 +2,13 @@
 setwd("D:\\GSE9508\\cptac\\06.diff")
 inputFile="normalize.csv"
 pFilter=0.05
-logFCfilter=0
+logFCfilter=1
 conNum=13
 treatNum=12
 
 
 outTab=data.frame()
-group=c(rep(2,treatNum),rep(1,conNum))
+group=c(rep(1,conNum),rep(2,treatNum))
 data=read.csv(inputFile,header=T,row.names=1)
 data=as.matrix(data)
 
