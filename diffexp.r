@@ -30,6 +30,7 @@ for(i in row.names(data)){
 	 }
 }
 
+
 row.names(outTab)=outTab[,1]
 outTab=outTab[,-1]
 write.csv(outTab,file="all.csv")
