@@ -1,4 +1,5 @@
 #calculate differential expression gene
+library("org.Hs.eg.db")
 setwd("D:\\GSE9508\\cptac\\06.diff")
 inputFile="normalize.csv"
 pFilter=0.05
@@ -38,6 +39,14 @@ outDiff=outTab[( abs(as.numeric(as.vector(outTab$logFC)))>logFCfilter & as.numer
 write.csv(outDiff,file="diff.csv")
 heatmap=rbind(data[as.vector(row.names(outDiff)),])
 write.csv(heatmap,file="diffProteinExp.csv")
+
+
+
+genes=as.vector(row.names(outDiff))
+entrezIDs <- mget(genes, org.Hs.egSYMBOL2EG, ifnotfound=NA)
+entrezIDs <- as.character(entrezIDs)
+outDiffwithID=cbind(outDiff,entrezID=entrezIDs)
+write.csv(outDiffwithID,file="diffwithID.csv")
 
 
 
