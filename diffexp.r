@@ -2,7 +2,7 @@
 setwd("D:\\GSE9508\\cptac\\06.diff")
 inputFile="normalize.csv"
 pFilter=0.05
-logFCfilter=1
+logFCfilter=0
 conNum=13
 treatNum=12
 
@@ -30,8 +30,9 @@ for(i in row.names(data)){
 	 }
 }
 
-
-write.csv(outTab,file="all.csv",row.names=F)
+row.names(outTab)=outTab[,1]
+outTab=outTab[,-1]
+write.csv(outTab,file="all.csv")
 outDiff=outTab[( abs(as.numeric(as.vector(outTab$logFC)))>logFCfilter & as.numeric(as.vector(outTab$pValue))<pFilter),]
 write.csv(outDiff,file="diff.csv",row.names=F)
 heatmap=rbind(data[as.vector(outDiff[,1]),])
