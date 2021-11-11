@@ -28,3 +28,9 @@ dev.off()
 pdf(file="bubble.pdf",width = 10,height = 8)
 dotplot(kk,showCategory = 10,split="ONTOLOGY",orderBy = "GeneRatio") + facet_grid(ONTOLOGY~., scale='free')
 dev.off()
+
+
+
+
+
+
