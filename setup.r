@@ -1,4 +1,4 @@
-#insatll necessary packages
+#先使用require函数载入程序包以测试是否安装
 if (!require("BiocManager"))       install.packages("BiocManager")
 if (!require("colorspace"))        install.packages("colorspace")
 if (!require("stringi"))           install.packages("stringi")
@@ -15,6 +15,7 @@ if (!require("survival"))          install.packages("survival")
 if (!require("survminer"))         install.packages("survminer")
 if (!require("survivalROC"))       install.packages("survivalROC")
 if (!require("beeswarm"))          install.packages("beeswarm")
+#使用BiocManager安装非官方程序包
 BiocManager::install("DOSE"             ,update=TRUE, ask=FALSE)
 BiocManager::install("clusterProfiler"  ,update=TRUE, ask=FALSE)
 BiocManager::install("enrichplot"       ,update=TRUE, ask=FALSE)
