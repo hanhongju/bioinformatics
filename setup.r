@@ -15,11 +15,6 @@ if (!require("survival"))          install.packages("survival")
 if (!require("survminer"))         install.packages("survminer")
 if (!require("survivalROC"))       install.packages("survivalROC")
 if (!require("beeswarm"))          install.packages("beeswarm")
-if (!require("xlsx"))              install.packages("xlsx")
-
-
-
-
 BiocManager::install("DOSE"             ,update=TRUE, ask=FALSE)
 BiocManager::install("clusterProfiler"  ,update=TRUE, ask=FALSE)
 BiocManager::install("enrichplot"       ,update=TRUE, ask=FALSE)
@@ -29,8 +24,6 @@ BiocManager::install("impute"           ,update=TRUE, ask=FALSE)
 BiocManager::install("limma"            ,update=TRUE, ask=FALSE)
 BiocManager::install("biomaRt"          ,update=TRUE, ask=FALSE)
 BiocManager::install("edgeR"            ,update=TRUE, ask=FALSE)
-BiocManager::install("DESeq"            ,update=TRUE, ask=FALSE)
-BiocManager::install("mirna40cdf"       ,update=TRUE, ask=FALSE)
 BiocManager::install("affy"             ,update=TRUE, ask=FALSE)
 BiocManager::install("tcltk"            ,update=TRUE, ask=FALSE)
 BiocManager::install("ChIPseeker"       ,update=TRUE, ask=FALSE)
