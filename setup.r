@@ -1,5 +1,5 @@
 #insatll necessary packages
-if (!require("BiocManager" ,warn.conflicts=F))       install.packages("BiocManager")
+if (!require("BiocManager"))       install.packages("BiocManager")
 if (!require("colorspace"))        install.packages("colorspace")
 if (!require("stringi"))           install.packages("stringi")
 if (!require("ggplot2"))           install.packages("ggplot2")
