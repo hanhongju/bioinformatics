@@ -31,7 +31,7 @@ BiocManager::install("affy"             ,update=TRUE, ask=FALSE)
 BiocManager::install("tcltk"            ,update=TRUE, ask=FALSE)
 BiocManager::install("ChIPseeker"       ,update=TRUE, ask=FALSE)
 
-
+BiocManager::install(ask = FALSE)
 
 
 
