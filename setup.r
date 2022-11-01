@@ -1,21 +1,25 @@
 #insatll necessary packages
-install.packages("BiocManager")
-install.packages("colorspace")
-install.packages("stringi")
-install.packages("ggplot2")
-install.packages("gplots")
-install.packages("ggpubr")
-install.packages("ggpmisc")
-install.packages("GOplot")
-install.packages("digest")
-install.packages("stringr")
-install.packages("rms") 
-install.packages("foreign") 
-install.packages("survival")
-install.packages("survminer")
-install.packages("survivalROC")
-install.packages("beeswarm")
-install.packages("xlsx")
+if (!require("BiocManager"))       install.packages("BiocManager")
+if (!require("colorspace"))        install.packages("colorspace")
+if (!require("stringi"))           install.packages("stringi")
+if (!require("ggplot2"))           install.packages("ggplot2")
+if (!require("gplots"))            install.packages("gplots")
+if (!require("ggpubr"))            install.packages("ggpubr")
+if (!require("ggpmisc"))           install.packages("ggpmisc")
+if (!require("GOplot"))            install.packages("GOplot")
+if (!require("digest"))            install.packages("digest")
+if (!require("stringr"))           install.packages("stringr")
+if (!require("rms"))               install.packages("rms")
+if (!require("foreign"))           install.packages("foreign")
+if (!require("survival"))          install.packages("survival")
+if (!require("survminer"))         install.packages("survminer")
+if (!require("survivalROC"))       install.packages("survivalROC")
+if (!require("beeswarm"))          install.packages("beeswarm")
+if (!require("xlsx"))              install.packages("xlsx")
+
+
+
+
 BiocManager::install("DOSE"             ,update=TRUE, ask=FALSE)
 BiocManager::install("clusterProfiler"  ,update=TRUE, ask=FALSE)
 BiocManager::install("enrichplot"       ,update=TRUE, ask=FALSE)
@@ -31,7 +35,6 @@ BiocManager::install("affy"             ,update=TRUE, ask=FALSE)
 BiocManager::install("tcltk"            ,update=TRUE, ask=FALSE)
 BiocManager::install("ChIPseeker"       ,update=TRUE, ask=FALSE)
 
-BiocManager::install(ask = FALSE)
 
 
 
