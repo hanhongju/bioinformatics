@@ -1,5 +1,5 @@
-#先使用require函数载入程序包以测试是否安装
-if (!require("BiocManager"))       install.packages("BiocManager")
+#先使用require函数载入程序包以测试是否安装，library无法返回FALSE
+if (!library("BiocManager"))       install.packages("BiocManager")
 if (!require("colorspace"))        install.packages("colorspace")
 if (!require("stringi"))           install.packages("stringi")
 if (!require("ggplot2"))           install.packages("ggplot2")
