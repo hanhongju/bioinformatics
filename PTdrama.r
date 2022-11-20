@@ -1,4 +1,4 @@
-#PT站魔力值计算代码@R
+#PT站魔力值计算代码
 if (!require("plotly"))            install.packages("plotly")
 library(plotly)
 
