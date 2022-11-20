@@ -11,7 +11,7 @@ A    = outer(Ti, Ni, FUN = function(Ti, Ni)   (1-10^(-Ti/T0))*(1+2^0.5*10^(-(Ni-
 plot_ly(x = ~Ni, y = ~Ti, z = ~A, type = "surface", color = "black")
 
 #绘制魔力值B折线图
-A    = seq(0, 2000, by=100)
+A    = seq(0, 2000, by=50)
 B0   = 100
 L    = 300
 B    = B0*2/pi*atan(A/L)
