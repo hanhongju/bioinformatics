@@ -16,6 +16,7 @@ if (!require("survminer"))         install.packages("survminer")
 if (!require("survivalROC"))       install.packages("survivalROC")
 if (!require("beeswarm"))          install.packages("beeswarm")
 if (!require("caret"))             install.packages("caret")
+if (!require("plotly"))            install.packages("plotly")
 #使用BiocManager安装非官方程序包
 BiocManager::install("DOSE"             ,update=TRUE, ask=FALSE)
 BiocManager::install("clusterProfiler"  ,update=TRUE, ask=FALSE)
