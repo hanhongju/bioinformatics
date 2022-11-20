@@ -4,7 +4,7 @@ library(plotly)
 
 #绘制中间变量A图
 Ti   = seq(0.1, 15, by=0.1)
-Ni   = seq(1, 15, by=0.1)
+Ni   = seq(1, 15, by=1)
 T0   = 4
 N0   = 7
 A    = outer(Ti, Ni, FUN = function(Ti, Ni)   (1-10^(-Ti/T0))*(1+2^0.5*10^(-(Ni-1)/(N0-1))))
