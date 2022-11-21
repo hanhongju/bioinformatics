@@ -10,7 +10,7 @@ N0 = 7
 dA = outer(Ti, Ni, FUN = function(Ti, Ni)   (1-10^(-Ti/T0))*(1+2^0.5*10^(-(Ni-1)/(N0-1))))
 plot_ly(x = ~Ni, y = ~Ti, z = ~dA, type = "surface", color = "black") %>%
              layout(title = 
-                    list(text = "dA=(1-10^(-Ti/T0))*(1+2^0.5*10^(-(Ni-1)/(N0-1)))<br />T0 = 4<br />N0 = 7"
+                    list(text = "dA = (1-10^(-Ti/T0))*(1+2^0.5*10^(-(Ni-1)/(N0-1)))<br />T0 = 4<br />N0 = 7"
                          , x = 0.9, y = 0.9))
 #绘制魔力值B折线图
 A  = seq(0, 2000, by=50)
