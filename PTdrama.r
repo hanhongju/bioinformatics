@@ -1,7 +1,5 @@
 #PT站魔力值计算代码
-if (!require("plotly"))            install.packages("plotly")
 library(plotly)
-
 #绘制中间变量A图
 Ti = seq(0.1, 15, by=0.1)
 Ni = seq(1, 15, by=1)
