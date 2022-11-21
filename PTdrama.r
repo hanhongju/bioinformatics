@@ -20,7 +20,7 @@ B    = B0*2/pi*atan(A/L)
 plot_ly(x = ~A, y = ~B, type = "scatter", mode = "markers+lines") %>%
              layout(title = 
                     list(text = "B = B0*2/pi*atan(A/L)<br />B0 = 100<br />L = 300"
-                         , x = 0.9, y = 0.9))
+                         , x = 0.9, y = 0.5))
 
 
 
