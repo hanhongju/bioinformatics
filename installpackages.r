@@ -1,3 +1,5 @@
+#安装软件包
+unlink(“C:/Program Files/R/R-4.2.2/library/00LOCK”, recursive = TRUE)
 #先使用require函数载入程序包以测试是否安装，library无法返回FALSE
 if (!require("BiocManager"))       install.packages("BiocManager")
 if (!require("colorspace"))        install.packages("colorspace")
