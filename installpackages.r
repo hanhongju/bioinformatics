@@ -1,5 +1,4 @@
 #安装软件包
-options("install.lock"=FALSE)
 #先使用require函数载入程序包以测试是否安装，library无法返回FALSE
 if (!require("BiocManager"))       install.packages("BiocManager")
 if (!require("colorspace"))        install.packages("colorspace")
@@ -20,6 +19,7 @@ if (!require("beeswarm"))          install.packages("beeswarm")
 if (!require("caret"))             install.packages("caret")
 if (!require("plotly"))            install.packages("plotly")
 #使用BiocManager安装非官方程序包
+options("install.lock"=FALSE)
 BiocManager::install("DOSE"             ,update=TRUE, ask=FALSE)
 BiocManager::install("clusterProfiler"  ,update=TRUE, ask=FALSE)
 BiocManager::install("enrichplot"       ,update=TRUE, ask=FALSE)
