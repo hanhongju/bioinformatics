@@ -19,6 +19,7 @@ if (!require("beeswarm"))          install.packages("beeswarm")
 if (!require("caret"))             install.packages("caret")
 if (!require("plotly"))            install.packages("plotly")
 if (!require("gower"))             install.packages("gower")
+if (!require("xfun"))              install.packages("xfun")
 #使用BiocManager安装非官方程序包
 options("install.lock"=FALSE)
 BiocManager::install("DOSE"             ,update=TRUE, ask=FALSE)
