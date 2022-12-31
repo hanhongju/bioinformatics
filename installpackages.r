@@ -1,4 +1,4 @@
-#在RGui中安装软件包，需要全局代理
+#在RGui中安装软件包
 #先使用require函数载入程序包以测试是否安装，library无法返回FALSE
 if (!require("BiocManager"))       install.packages("BiocManager")
 if (!require("colorspace"))        install.packages("colorspace")
