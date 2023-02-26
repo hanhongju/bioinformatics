@@ -1,5 +1,5 @@
 
-y=1
+
 pvalue = function(x){
   n=26
   c=55
@@ -9,7 +9,7 @@ pvalue = function(x){
 }
 
 
-
+y=1
 price = 1169
 while   (pvalue(y) - price > 0.01)
 y=y+0.000001
