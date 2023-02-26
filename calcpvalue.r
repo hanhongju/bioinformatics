@@ -4,7 +4,7 @@ pvalue = function(x){
   n=26
   c=55
   m=1000
-return(c*((1-1/(1+x)^n)/x)+(m+c)/(1+x)^n)
+p=c*((1-1/(1+x)^n)/x)+(m+c)/(1+x)^n
 }
 
 
