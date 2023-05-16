@@ -21,6 +21,8 @@ if (!require("plotly"))            install.packages("plotly")
 if (!require("gower"))             install.packages("gower")
 if (!require("xfun"))              install.packages("xfun")
 if (!require("dplyr"))             install.packages("dplyr")
+if (!require("org.Hs.eg.db"))      install.packages("org.Hs.eg.db")
+if (!require("org.Mm.eg.db"))      install.packages("org.Mm.eg.db")
 
 
 #使用BiocManager安装非官方程序包
