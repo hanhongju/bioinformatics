@@ -23,6 +23,9 @@ if (!require("xfun"))              install.packages("xfun")
 if (!require("dplyr"))             install.packages("dplyr")
 if (!require("org.Hs.eg.db"))      install.packages("org.Hs.eg.db")
 if (!require("org.Mm.eg.db"))      install.packages("org.Mm.eg.db")
+if (!require("utf8"))              install.packages("utf8")
+
+
 
 
 #使用BiocManager安装非官方程序包
