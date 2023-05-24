@@ -25,6 +25,8 @@ if (!require("dplyr"))             install.packages("dplyr")
 if (!require("org.Hs.eg.db"))      install.packages("org.Hs.eg.db")
 if (!require("org.Mm.eg.db"))      install.packages("org.Mm.eg.db")
 if (!require("utf8"))              install.packages("utf8")
+if (!require("ipred"))             install.packages("ipred")
+if (!require("checkmate"))         install.packages("checkmate")
 
 
 
@@ -44,6 +46,7 @@ BiocManager::install("affy"             ,update=TRUE, ask=FALSE)
 BiocManager::install("tcltk"            ,update=TRUE, ask=FALSE)
 BiocManager::install("ChIPseeker"       ,update=TRUE, ask=FALSE)
 BiocManager::install("ReactomePA"       ,update=TRUE, ask=FALSE)
+
 
 
 
