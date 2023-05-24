@@ -2,7 +2,7 @@
 #要用管理员权限在CMD中安装，不能在RStiodio运行
 pkgs = c("BiocManager", "colorspace", "stringi", "ggplot2", "gplots", "ggpubr", "ggpmisc", "GOplot", "digest", "stringr",
          "rms", "foreign", "survival", "survminer", "survivalROC", "beeswarm", "caret", "plotly", "gower", "xfun",
-         "dplyr", "org.Hs.eg.db", "org.Mm.eg.db", "utf8", "ipred", "checkmate")
+         "dplyr", "org.Hs.eg.db", "org.Mm.eg.db", "utf8", "ipred", "checkmate", "igraph")
 lapply(pkgs, require, character.only = TRUE)
 install.packages(pkgs, type = "source")
 
