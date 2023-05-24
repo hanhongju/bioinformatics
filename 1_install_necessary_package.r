@@ -1,4 +1,5 @@
 #安装软件包
+#要在R程序界面用管理员运行，不能在RStiodio运行，会安装不完全
 #先使用require函数载入程序包以测试是否安装，library无法返回FALSE
 if (!require("BiocManager"))       install.packages("BiocManager")
 if (!require("colorspace"))        install.packages("colorspace")
