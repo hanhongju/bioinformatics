@@ -42,7 +42,7 @@ BiocManager::install("edgeR"            ,update=TRUE, ask=FALSE)
 BiocManager::install("affy"             ,update=TRUE, ask=FALSE)
 BiocManager::install("tcltk"            ,update=TRUE, ask=FALSE)
 BiocManager::install("ChIPseeker"       ,update=TRUE, ask=FALSE)
-
+BiocManager::install("ReactomePA"       ,update=TRUE, ask=FALSE)
 
 
 
