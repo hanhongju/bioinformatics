@@ -4,12 +4,12 @@ pkgs = c("BiocManager", "colorspace", "stringi", "ggplot2", "gplots", "ggpubr", 
          "rms", "foreign", "survival", "survminer", "survivalROC", "beeswarm", "caret", "plotly", "gower", "xfun",
          "dplyr", "org.Hs.eg.db", "org.Mm.eg.db", "utf8", "ipred", "checkmate", "igraph")
 lapply(pkgs, require, character.only = TRUE)
-install.packages(pkgs, type = "source")
+install.packages(pkgs, type = "source", repo = "https://mirrors.sustech.edu.cn/CRAN/")
 
 
 pkgs = c("DOSE", "clusterProfiler", "enrichplot", "org.Hs.eg.db", "org.Mm.eg.db", "impute", "limma", "biomaRt", "edgeR", "affy",
          "tcltk", "ChIPseeker", "ReactomePA")
-BiocManager::install(pkgs, update = TRUE, ask = FALSE, type = "source")
+BiocManager::install(pkgs, update = TRUE, ask = FALSE, type = "source", repo = "https://mirrors.sustech.edu.cn/CRAN/")
 
 
 
