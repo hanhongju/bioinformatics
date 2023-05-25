@@ -12,5 +12,5 @@ pkgs = c("DOSE", "clusterProfiler", "enrichplot", "org.Hs.eg.db", "org.Mm.eg.db"
 BiocManager::install(pkgs, update = TRUE, ask = FALSE, type = "source", repo = "https://mirrors.sustech.edu.cn/CRAN/")
 
 
-
-
+lapply(pkgs, require, character.only = TRUE)
+install.packages(pkgs, type = "win.binary", repo = "https://mirrors.sustech.edu.cn/CRAN/")
