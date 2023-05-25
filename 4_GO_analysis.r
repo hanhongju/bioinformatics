@@ -3,8 +3,8 @@ library("org.Mm.eg.db")
 library("clusterProfiler")
 library("enrichplot")
 library("ggplot2")
-library(GOplot)
-library(stringr)
+library("GOplot")
+library("stringr")
 #设定工作目录及DEG文件
 workdir = r"(C:\Users\hj\Desktop\GSE209841)"
 setwd(workdir)
