@@ -10,6 +10,7 @@ pkgs = c("affy","beeswarm","BiocManager","biomaRt","caret",
          "stringi","stringr","survival","survivalROC","survminer",
          "tcltk","utf8","xfun")
 lapply(pkgs, require, character.only = TRUE)
+dir.create(Sys.getenv("R_LIBS_USER"), recursive = TRUE)
 install.packages(pkgs, repo = "https://mirrors.sustech.edu.cn/CRAN/")
 BiocManager::install(pkgs, update = TRUE, ask = FALSE,
                      site_repository = "https://mirrors.sustech.edu.cn/CRAN/")
