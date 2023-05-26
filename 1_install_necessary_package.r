@@ -1,4 +1,4 @@
-#安装软件包
+#安装软件包，不行就重启R试试
 
 
 pkgs = c("affy","beeswarm","BiocManager","biomaRt","caret",
