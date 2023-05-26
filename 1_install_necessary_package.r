@@ -1,5 +1,6 @@
 #安装软件包，不行就重启R试试
 
+
 dir.create(Sys.getenv("R_LIBS_USER"), recursive = TRUE)
 pkgs = c("affy","beeswarm","BiocManager","biomaRt","caret",
          "checkmate","ChIPseeker","clusterProfiler","colorspace","digest",
