@@ -11,7 +11,8 @@ pkgs = c("affy","beeswarm","BiocManager","biomaRt","caret",
          "tcltk","utf8","xfun")
 lapply(pkgs, require, character.only = TRUE)
 install.packages(pkgs, repo = "https://mirrors.sustech.edu.cn/CRAN/")
-BiocManager::install(pkgs, update = TRUE, ask = FALSE, site_repository = "https://mirrors.sustech.edu.cn/CRAN/")
+BiocManager::install(pkgs, update = TRUE, ask = FALSE,
+                     site_repository = "https://mirrors.sustech.edu.cn/CRAN/")
 
 
 
