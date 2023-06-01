@@ -1,4 +1,4 @@
-#安装软件包，不行就重启R试试
+#安装软件包
 
 
 dir.create(Sys.getenv("R_LIBS_USER"), recursive = TRUE)
