@@ -1,8 +1,6 @@
 #安装软件包
 
 
-
-
 pkgs = c("affy","beeswarm","BiocManager","biomaRt","caret",
          "checkmate","ChIPseeker","clusterProfiler","colorspace","digest",
          "DOSE","dplyr","edgeR","enrichplot","foreign",
@@ -16,16 +14,6 @@ install.packages(pkgs, repo = "https://mirrors.sustech.edu.cn/CRAN/")
 BiocManager::install(pkgs, update = FALSE,
                      site_repository = "https://mirrors.sustech.edu.cn/CRAN/")
 dir.create(Sys.getenv("R_LIBS_USER"), recursive = TRUE)
-
-
-
-
-
-
-
-
-
-
 
 
 
