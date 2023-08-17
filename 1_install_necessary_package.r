@@ -1,6 +1,3 @@
-#安装软件包
-
-
 pkgs = c("affy","beeswarm","BiocManager","biomaRt","caret",
          "checkmate","ChIPseeker","clusterProfiler","colorspace","digest",
          "DOSE","dplyr","edgeR","enrichplot","foreign",
@@ -18,5 +15,4 @@ dir.create(Sys.getenv("R_LIBS_USER"), recursive = TRUE)
 
 
 
-
-#END
+#安装软件包
