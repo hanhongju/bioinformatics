@@ -1,4 +1,4 @@
-pkgs = c("affy","beeswarm","BiocManager","biomaRt","caret",
+pkgs = c("affy","beeswarm","BiocManager","biomaRt","caret","lme4","xml2","pbkrtest","gridtext","car","rstatix","ggpubr","ggtext",
          "checkmate","ChIPseeker","clusterProfiler","colorspace","digest",
          "DOSE","dplyr","edgeR","enrichplot","foreign",
          "ggplot2","ggpmisc","ggpubr","GOplot","gower",
