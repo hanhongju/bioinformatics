@@ -1,15 +1,15 @@
-pkgs = c("affy","beeswarm","BiocManager","biomaRt","caret","lme4","xml2","pbkrtest","gridtext","car","rstatix","ggpubr","ggtext",
+pkgs = c("affy","beeswarm","biomaRt","caret","lme4","xml2","pbkrtest","gridtext",
          "checkmate","ChIPseeker","clusterProfiler","colorspace","digest",
-         "DOSE","dplyr","edgeR","enrichplot","foreign",
-         "ggplot2","ggpmisc","ggpubr","GOplot","gower",
+         "DOSE","dplyr","edgeR","enrichplot","foreign","ggpubr","ggtext",
+         "ggplot2","ggpmisc","ggpubr","GOplot","gower","car","rstatix",
          "gplots","igraph","impute","ipred","limma",
          "org.Hs.eg.db","org.Mm.eg.db","plotly","ReactomePA","rms",
          "stringi","stringr","survival","survivalROC","survminer",
          "tcltk","utf8","xfun")
-lapply(pkgs, require, character.only = TRUE)
-install.packages(pkgs, repo = "https://mirrors.sustech.edu.cn/CRAN/")
+install.packages("BiocManager", repo = "https://mirrors.sustech.edu.cn/CRAN/")
 BiocManager::install(pkgs, update = FALSE,
                      site_repository = "https://mirrors.sustech.edu.cn/CRAN/")
+lapply(pkgs, require, character.only = TRUE)
 dir.create(Sys.getenv("R_LIBS_USER"), recursive = TRUE)
 
 
