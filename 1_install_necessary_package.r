@@ -1,3 +1,6 @@
+dir.create(Sys.getenv("R_LIBS_USER"), recursive = TRUE)
+options(repos = "https://mirrors.tuna.tsinghua.edu.cn/CRAN/")
+options(BioC_mirror = "http://mirrors.tuna.tsinghua.edu.cn/bioconductor/")
 pkgs = c("affy","beeswarm","biomaRt","caret","lme4","xml2","pbkrtest","gridtext",
          "checkmate","ChIPseeker","clusterProfiler","colorspace","digest",
          "DOSE","dplyr","edgeR","enrichplot","foreign","ggpubr","ggtext",
@@ -5,9 +8,8 @@ pkgs = c("affy","beeswarm","biomaRt","caret","lme4","xml2","pbkrtest","gridtext"
          "gplots","igraph","impute","ipred","limma","tcltk","utf8","xfun",
          "org.Hs.eg.db","org.Mm.eg.db","plotly","ReactomePA","rms",
          "stringi","stringr","survival","survivalROC","survminer")
-install.packages("BiocManager", repo = "https://mirrors.sustech.edu.cn/CRAN/")
-BiocManager::install(pkgs, update = FALSE, site_repository = "https://mirrors.sustech.edu.cn/CRAN/")
-dir.create(Sys.getenv("R_LIBS_USER"), recursive = TRUE)
+install.packages("BiocManager",  INSTALL_opts = '--no-lock')
+BiocManager::install(pkgs, update = FALSE)
 lapply(pkgs, require, character.only = TRUE)
 
 
