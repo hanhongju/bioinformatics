@@ -15,4 +15,4 @@ lapply(pkgs, require, character.only = TRUE)
 
 
 
-#安装软件包，个人安装的包在C:\Users\hj\AppData\Local\R\win-library\4.3
+# 安装软件包，个人安装的包在C:\Users\hj\AppData\Local\R\win-library\4.4
