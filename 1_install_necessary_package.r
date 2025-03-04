@@ -15,4 +15,6 @@ lapply(pkgs, require, character.only = TRUE)
 
 
 
-# 安装软件包，个人安装的包在C:\Users\hj\AppData\Local\R\win-library\4.4
+# 安装软件包，个人安装的包在:
+# C:\Users\hj\AppData\Local\R\win-library\4.4 @ Windows
+# /home/hj/R/x86_64-pc-linux-gnu-library/4.4 @ Ubuntu 24 LTS
