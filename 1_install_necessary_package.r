@@ -8,7 +8,7 @@ pkgs = c("affy","beeswarm","biomaRt","caret","lme4","xml2","pbkrtest","gridtext"
          "gplots","igraph","impute","ipred","limma","tcltk","utf8","xfun",
          "org.Hs.eg.db","org.Mm.eg.db","plotly","ReactomePA","rms",
          "stringi","stringr","survival","survivalROC","survminer")
-install.packages("BiocManager",  INSTALL_opts = '--no-lock')
+install.packages("BiocManager", INSTALL_opts = '--no-lock')
 BiocManager::install(pkgs, update = FALSE)
 lapply(pkgs, require, character.only = TRUE)
 
