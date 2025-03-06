@@ -18,8 +18,8 @@ BiocManager::install(pkgs, ask = FALSE)
 
 
 
-# Windows中个人包安装位置在 C:\Users\hj\AppData\Local\R\win-library\4.4
-# Ubuntu中系统包安装在 /usr/lib/R/library/
+# Windows中个人包库安装位置在 C:\Users\hj\AppData\Local\R\win-library\4.4
+# Ubuntu中系统包库安装在 /usr/local/lib/R/site-library
 # 参考文献：
 # https://github.com/bionoob7/bionoob7.github.io/issues/9
 # https://stackoverflow.com/questions/20587440/some-r-packages-do-not-update-with-update-packages
