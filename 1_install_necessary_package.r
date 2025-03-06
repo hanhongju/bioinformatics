@@ -12,7 +12,8 @@ pkgs = c("affy","beeswarm","biomaRt","caret","lme4","xml2","pbkrtest","gridtext"
          "org.Hs.eg.db","org.Mm.eg.db","plotly","ReactomePA","rms",
          "stringi","stringr","survival","survivalROC","survminer")
 install.packages("BiocManager")
-BiocManager::install(pkgs, update = FALSE)
+# 编译bioconductor包需要安装Rtools
+BiocManager::install(pkgs, ask = FALSE, type ="source")
 lapply(pkgs, require, character.only = TRUE)
 
 
