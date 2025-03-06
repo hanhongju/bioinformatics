@@ -15,7 +15,7 @@ pkgs = c("affy","beeswarm","biomaRt","caret","lme4","xml2","pbkrtest","gridtext"
 update.packages(ask = FALSE, type = "source")
 if (!require("BiocManager")) install.packages("BiocManager")
 # windows中编译bioconductor包需要安装rtools
-BiocManager::install(pkgs, ask = FALSE, type = "source")
+BiocManager::install(pkgs, ask = FALSE)
 lapply(pkgs, require, character.only = TRUE)
 
 
@@ -25,3 +25,4 @@ lapply(pkgs, require, character.only = TRUE)
 # Ubuntu中系统包安装在 /usr/lib/R/library/
 # 参考文献：
 # https://github.com/bionoob7/bionoob7.github.io/issues/9
+# https://stackoverflow.com/questions/20587440/some-r-packages-do-not-update-with-update-packages
