@@ -1,6 +1,7 @@
 # 在R中安装包前先将系统软件升级到最新：
 # apt -y update && DEBIAN_FRONTEND=noninteractive apt -y full-upgrade && apt -y autoremove
 dir.create(Sys.getenv("R_LIBS_USER"), recursive = TRUE)
+.libPaths(Sys.getenv("R_LIBS_USER"))
 options(repos = "https://mirrors.tuna.tsinghua.edu.cn/CRAN/")
 options(BioC_mirror = "http://mirrors.tuna.tsinghua.edu.cn/bioconductor/")
 pkgs = c("affy","beeswarm","biomaRt","caret","lme4","xml2","pbkrtest","gridtext",
@@ -10,8 +11,8 @@ pkgs = c("affy","beeswarm","biomaRt","caret","lme4","xml2","pbkrtest","gridtext"
          "gplots","igraph","impute","ipred","limma","tcltk","utf8","xfun",
          "org.Hs.eg.db","org.Mm.eg.db","plotly","ReactomePA","rms",
          "stringi","stringr","survival","survivalROC","survminer")
-install.packages("BiocManager", INSTALL_opts = '--no-lock')
-BiocManager::install(pkgs, update = FALSE, INSTALL_opts = '--no-lock')
+install.packages("BiocManager")
+BiocManager::install(pkgs)
 lapply(pkgs, require, character.only = TRUE)
 
 
