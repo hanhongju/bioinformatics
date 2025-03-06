@@ -14,7 +14,6 @@ update.packages(ask = FALSE, type = "source")
 if (!require("BiocManager")) install.packages("BiocManager")
 # windows中编译bioconductor包需要安装rtools
 BiocManager::install(pkgs, ask = FALSE)
-sapply(pkgs, require, character.only = TRUE)
 
 
 
