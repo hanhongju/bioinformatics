@@ -12,7 +12,7 @@ pkgs = c("affy","beeswarm","biomaRt","caret","lme4","xml2","pbkrtest","gridtext"
          "org.Hs.eg.db","org.Mm.eg.db","plotly","ReactomePA","rms",
          "stringi","stringr","survival","survivalROC","survminer")
 install.packages("BiocManager")
-BiocManager::install(pkgs)
+BiocManager::install(pkgs, update = FALSE)
 lapply(pkgs, require, character.only = TRUE)
 
 
