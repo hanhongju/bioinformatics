@@ -11,12 +11,13 @@ pkgs = c("affy","beeswarm","biomaRt","caret","lme4","xml2","pbkrtest","gridtext"
          "gplots","igraph","impute","ipred","limma","tcltk","utf8","xfun",
          "org.Hs.eg.db","org.Mm.eg.db","plotly","ReactomePA","rms",
          "stringi","stringr","survival","survivalROC","survminer")
-install.packages("BiocManager")
+update.packages()
+if (!require("BiocManager")) install.packages("BiocManager")
 # windows中编译bioconductor包需要安装Rtools
 BiocManager::install(pkgs, ask = FALSE, type ="source")
 lapply(pkgs, require, character.only = TRUE)
-
-
+install.packages()
+if (!require("BiocManager")) install.packages("BiocManager")
 
 
 # 安装软件包，个人安装的包在:
