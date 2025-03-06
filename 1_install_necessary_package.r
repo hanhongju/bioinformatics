@@ -13,7 +13,7 @@ pkgs = c("affy","beeswarm","biomaRt","caret","lme4","xml2","pbkrtest","gridtext"
          "stringi","stringr","survival","survivalROC","survminer")
 update.packages()
 if (!require("BiocManager")) install.packages("BiocManager")
-# windows中编译bioconductor包需要安装Rtools
+# windows中编译bioconductor包需要安装rtools
 BiocManager::install(pkgs, ask = FALSE, type ="source")
 lapply(pkgs, require, character.only = TRUE)
 
