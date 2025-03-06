@@ -16,8 +16,8 @@ if (!require("BiocManager")) install.packages("BiocManager")
 # windows中编译bioconductor包需要安装Rtools
 BiocManager::install(pkgs, ask = FALSE, type ="source")
 lapply(pkgs, require, character.only = TRUE)
-install.packages()
-if (!require("BiocManager")) install.packages("BiocManager")
+
+
 
 
 # 安装软件包，个人安装的包在:
