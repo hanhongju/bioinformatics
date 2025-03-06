@@ -3,7 +3,7 @@
 dir.create(Sys.getenv("R_LIBS_USER"), recursive = TRUE)
 .libPaths(Sys.getenv("R_LIBS_USER"))
 options(repos = "https://mirrors.tuna.tsinghua.edu.cn/CRAN/")
-options(BioC_mirror = "http://mirrors.tuna.tsinghua.edu.cn/bioconductor/")
+options(BioC_mirror = "https://mirrors.tuna.tsinghua.edu.cn/bioconductor/")
 pkgs = c("affy","beeswarm","biomaRt","caret","lme4","xml2","pbkrtest","gridtext",
          "checkmate","ChIPseeker","clusterProfiler","colorspace","digest",
          "DOSE","dplyr","edgeR","enrichplot","foreign","ggpubr","ggtext",
