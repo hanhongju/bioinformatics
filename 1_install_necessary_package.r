@@ -13,6 +13,7 @@ pkgs = c("affy","beeswarm","biomaRt","caret","lme4","xml2","pbkrtest","gridtext"
 # Windows中从源码编译需要安装rtools
 update.packages(ask = FALSE, type = "source")
 if (!require("BiocManager")) install.packages("BiocManager")
+# binary包经常有bug，尽量不要用
 BiocManager::install(pkgs, ask = FALSE, type = "source")
 
 
