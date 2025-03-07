@@ -19,8 +19,8 @@ BiocManager::install(pkgs, ask = FALSE, type = "source")
 
 
 # 获取管理员权限后系统库安装位置:
-# C:\Program Files\R\R-4.4.3\library @ Windows 10
-# /usr/local/lib/R/site-library @ Ubuntu 24 LTS
+# C:\Program Files\R\R-4.4.3\library\ @ Windows 10
+# /usr/local/lib/R/site-library/ @ Ubuntu 24 LTS
 # 参考文献：
 # https://github.com/bionoob7/bionoob7.github.io/issues/9
 # https://stackoverflow.com/questions/20587440/some-r-packages-do-not-update-with-update-packages
