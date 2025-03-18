@@ -1,8 +1,8 @@
 # 在R中安装包前先将系统软件升级到最新：
 # apt -y update && DEBIAN_FRONTEND=noninteractive apt -y full-upgrade && apt -y autoremove
 # shell中 sudo R 后获取管理员权限
-options(repos = "https://mirrors.ustc.edu.cn/CRAN/")
-options(BioC_mirror="https://mirrors.ustc.edu.cn/bioc/")
+options(repos = "https://mirrors.nju.edu.cn/CRAN/")
+options(BioC_mirror="https://mirrors.nju.edu.cn/bioconductor/")
 pkgs = c("affy","beeswarm","biomaRt","caret","lme4","xml2","pbkrtest","gridtext",
          "checkmate","ChIPseeker","clusterProfiler","colorspace","digest",
          "DOSE","dplyr","edgeR","enrichplot","foreign","ggpubr","ggtext",
@@ -24,3 +24,4 @@ BiocManager::install(pkgs, ask = FALSE, type = "source", INSTALL_opts = "--no-lo
 # 参考文献：
 # https://github.com/bionoob7/bionoob7.github.io/issues/9
 # https://stackoverflow.com/questions/20587440/some-r-packages-do-not-update-with-update-packages
+# ustc.edu.cn源与官方源同步会出现问题，不要使用
