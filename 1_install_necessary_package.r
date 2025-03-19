@@ -24,4 +24,4 @@ BiocManager::install(pkgs, ask = FALSE, type = "source", INSTALL_opts = "--no-lo
 # 参考文献：
 # https://github.com/bionoob7/bionoob7.github.io/issues/9
 # https://stackoverflow.com/questions/20587440/some-r-packages-do-not-update-with-update-packages
-# ustc.edu.cn源与官方源同步会出现问题，不要使用
+# ustc.edu.cn源与官方源同步会出现问题，tuna.tsinghua.edu.cn源速度太慢，不要使用
