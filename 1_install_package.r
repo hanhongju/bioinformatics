@@ -1,5 +1,4 @@
-# 在R中安装包前先将系统软件升级到最新：
-# apt -y update && DEBIAN_FRONTEND=noninteractive apt -y full-upgrade && apt -y autoremove
+# 在R中安装包前先将系统软件升级到最新
 # shell中 sudo R 后获取管理员权限
 options(repos = "https://mirrors.nju.edu.cn/CRAN/")
 options(BioC_mirror="https://mirrors.nju.edu.cn/bioconductor/")
