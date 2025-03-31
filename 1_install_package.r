@@ -2,7 +2,7 @@
 # shell中 sudo R 后获取管理员权限
 # Comprehensive R Archive Network mirror sources
 options(repos = "https://mirrors.nju.edu.cn/CRAN/")
-# options(BioC_mirror="https://mirrors.nju.edu.cn/bioconductor/")
+options(BioC_mirror="https://mirrors.nju.edu.cn/bioconductor/")
 pkgs = c("affy","beeswarm","biomaRt","caret","lme4","xml2","pbkrtest","gridtext",
          "checkmate","ChIPseeker","clusterProfiler","colorspace","digest",
          "DOSE","dplyr","edgeR","enrichplot","foreign","ggpubr","ggtext",
