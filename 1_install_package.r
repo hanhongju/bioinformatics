@@ -4,16 +4,17 @@
 options(repos = "https://mirrors.nju.edu.cn/CRAN/")
 options(BioC_mirror="https://mirrors.nju.edu.cn/bioconductor/")
 pkgs = c("affy","beeswarm","biomaRt","caret","lme4","xml2","pbkrtest","gridtext",
-         "checkmate","ChIPseeker","clusterProfiler","colorspace","digest",
+         "checkmate","clusterProfiler","colorspace","digest","devtools","stringi",
          "DOSE","dplyr","edgeR","enrichplot","foreign","ggpubr","ggtext",
-         "ggplot2","ggpmisc","ggpubr","GOplot","gower","car","rstatix",
+         "ggplot2","ggpmisc","ggpubr","GOplot","gower","car","rstatix","survival",
          "gplots","igraph","impute","ipred","limma","tcltk","utf8","xfun",
-         "org.Hs.eg.db","org.Mm.eg.db","plotly","ReactomePA","rms",
-         "stringi","stringr","survival","survivalROC","survminer")
+         "org.Hs.eg.db","org.Mm.eg.db","plotly","ReactomePA","rms","stringr",
+         "survivalROC","survminer","lawremi/rtracklayer","ChIPseeker")
 # Windows中从源码编译需要安装rtools
 update.packages(ask = FALSE, type = "source", INSTALL_opts = "--no-lock")
 if (!require("BiocManager")) install.packages("BiocManager", INSTALL_opts = "--no-lock")
 BiocManager::install(pkgs, ask = FALSE, type = "source", INSTALL_opts = "--no-lock")
+
 
 
 
