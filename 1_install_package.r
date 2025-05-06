@@ -20,7 +20,7 @@ BiocManager::install(pkgs, ask = FALSE, type = "source", INSTALL_opts = "--no-lo
 
 
 # 获取管理员权限后系统库安装位置:
-# C:\Program Files\R\R-4.4.3\library\ @ Windows 10
+# C:\Program Files\R\R-4.5.0\library\ @ Windows 10
 # /usr/local/lib/R/site-library/ @ Ubuntu 24 LTS
 # 参考文献：
 # https://github.com/bionoob7/bionoob7.github.io/issues/9
