@@ -13,9 +13,9 @@ pkgs = c("affy","beeswarm","biomaRt","caret","lme4","xml2","pbkrtest","gridtext"
 # Windows中从源码编译需要安装rtools
 update.packages(ask = FALSE, type = "source", INSTALL_opts = "--no-lock")
 if (!require("BiocManager")) install.packages("BiocManager", INSTALL_opts = "--no-lock")
+# BiocManager::install(version = "3.21")
 BiocManager::install(pkgs, ask = FALSE, type = "source", INSTALL_opts = "--no-lock")
 # BiocManager::install("lawremi/rtracklayer", ask = FALSE, type = "source", INSTALL_opts = "--no-lock")
-# BiocManager::install(version = "3.21")
 
 
 
