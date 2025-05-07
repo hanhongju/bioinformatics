@@ -15,7 +15,7 @@ update.packages(ask = FALSE, type = "source", INSTALL_opts = "--no-lock")
 if (!require("BiocManager")) install.packages("BiocManager", INSTALL_opts = "--no-lock")
 BiocManager::install(pkgs, ask = FALSE, type = "source", INSTALL_opts = "--no-lock")
 # BiocManager::install("lawremi/rtracklayer", ask = FALSE, type = "source", INSTALL_opts = "--no-lock")
-
+# BiocManager::install(version = "3.21")
 
 
 
