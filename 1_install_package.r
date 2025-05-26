@@ -10,14 +10,10 @@ pkgs = c("affy","beeswarm","biomaRt","car","caret","checkmate","ChIPseeker","clu
          "pbkrtest","plotly","ReactomePA","reticulate","rms","rstatix","rtracklayer","Seurat","stringi",
          "stringr","survival","survivalROC","survminer","tcltk","tidyverse","utf8","xfun","xml2")
 # Windows中从源码编译需要安装rtools
-update.packages(ask = FALSE, INSTALL_opts = "--no-lock")
 if (!require("BiocManager")) install.packages("BiocManager", type="both", INSTALL_opts = "--no-lock")
-BiocManager::install(pkgs, ask = FALSE, type="both", INSTALL_opts = "--no-lock")
+BiocManager::install(pkgs, ask = FALSE, INSTALL_opts = "--no-lock", Ncpus = 6)
 library("devtools")
 install_github("immunogenomics/harmony")
-# update.packages(ask = FALSE, type = "source", INSTALL_opts = "--no-lock")
-# BiocManager::install(version = "3.21")
-# BiocManager::install(pkgs, ask = FALSE, type = "source", INSTALL_opts = "--no-lock")
 
 
 
