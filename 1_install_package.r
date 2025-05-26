@@ -3,13 +3,12 @@
 # Comprehensive R Archive Network mirror sources
 options(repos = "https://mirrors.nju.edu.cn/CRAN/")
 options(BioC_mirror="https://mirrors.nju.edu.cn/bioconductor/")
-pkgs = c("affy","beeswarm","biomaRt","caret","lme4","xml2","pbkrtest","gridtext",
-         "checkmate","clusterProfiler","colorspace","digest","devtools","stringi",
-         "DOSE","dplyr","edgeR","enrichplot","foreign","ggpubr","ggtext","rtracklayer",
-         "ggplot2","ggpmisc","ggpubr","GOplot","gower","car","rstatix","survival","monocle",
-         "gplots","igraph","impute","ipred","limma","tcltk","utf8","xfun","dplyr","ggsci",
-         "org.Hs.eg.db","org.Mm.eg.db","plotly","ReactomePA","rms","stringr","openxlsx",
-         "survivalROC","survminer","ChIPseeker","reticulate","Seurat","tidyverse")
+pkgs = c("affy","beeswarm","biomaRt","car","caret","checkmate","ChIPseeker","clusterProfiler",
+         "colorspace","devtools","digest","DOSE","dplyr","dplyr","edgeR","enrichplot","foreign",
+         "ggplot2","ggpmisc","ggpubr","ggpubr","ggsci","ggtext","GOplot","gower","gplots","gridtext",
+         "igraph","impute","ipred","limma","lme4","monocle","openxlsx","org.Hs.eg.db","org.Mm.eg.db",
+         "pbkrtest","plotly","ReactomePA","reticulate","rms","rstatix","rtracklayer","Seurat","stringi",
+         "stringr","survival","survivalROC","survminer","tcltk","tidyverse","utf8","xfun","xml2")
 # Windows中从源码编译需要安装rtools
 update.packages(ask = FALSE, INSTALL_opts = "--no-lock")
 if (!require("BiocManager")) install.packages("BiocManager", type="both", INSTALL_opts = "--no-lock")
