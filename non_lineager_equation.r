@@ -9,7 +9,7 @@ pv = 1169
 # y <- yield to first par call 
 # uniroot函数求解非线性方程
 f <- function(y) pmt*((1-1/(1+y)^nper)/y)+fv/(1+y)^nper-pv
-sloveuniroot <- uniroot(f,c(-1,1))
+sloveuniroot <- uniroot(f, c(-1,1), extendInt = "yes")
 sloveuniroot$root
 # nleqslv包求解非线性方程（组）
 library(nleqslv)
