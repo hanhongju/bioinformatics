@@ -20,3 +20,4 @@ slove$x
 
 
 # nleqslv包求解非线性方程（组）
+# 参考文献https://blog.51cto.com/u_16213380/12522271
