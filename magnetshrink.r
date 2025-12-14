@@ -1,3 +1,4 @@
+if (!require("stringr")) install.packages("stringr", INSTALL_opts = "--no-lock")
 library(stringr)
 workdir = r"(C:\Users\hj\Desktop)"
 setwd(workdir)
