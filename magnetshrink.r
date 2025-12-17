@@ -7,3 +7,8 @@ data <- read.csv(inputFile, header = F)
 data$V1 <- gsub("&.*", "", data$V1)
 write.table(data, file = "nodn.txt",
             row.names = F, col.names = F, quote = F)
+
+
+
+
+# 只保留磁力链接的hash值
